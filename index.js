@@ -1,6 +1,14 @@
 const cells = document.querySelectorAll(".cell")
 const statusText = document.querySelector("#statusText")
 const restartBtn = document.querySelector("#restartBtn")
+//scoreboard variables here
+//set these to a value of 0
+//use current loop to add to these blank values using i++
+//add clear data button that clears these varuables 
+
+var xWinsTracker = document.getElementById("#xScoreData")
+var oWinsTracker = document.getElementById("#oScoreData")
+var tieTracker = document.getElementById("tieScoreData")
 const winConditions = [
     [0, 1, 2],
     [3, 4, 5],
@@ -59,16 +67,16 @@ function checkWinner() {
     if (roundWon) {
         statusText.textContent = `${currentPlayer} wins!`
         running = false
+        
     } else if (!options.includes("")) {
-        statusText.textContent = `Go DUDE!`
+        statusText.textContent = `Go again DUDES!`
         running = false
+        
     }
     else {
         changePlayer()
     }
-    // const cellE = options[condition[4]]
-    // const cellF = options[condition[5]]
-    // const cellG = options[condition[6]]
+
 
 }
 function restartGame() {

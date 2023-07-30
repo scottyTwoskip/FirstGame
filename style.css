@@ -1,3 +1,6 @@
+body{
+  background-color: brown;
+}
 h1 {
   margin: 0, auto;
   text-align: center;
@@ -27,4 +30,26 @@ h1 {
   margin-top: 10px;
   width: 80px;
   height: 30px;
+}
+.scoreboard{
+  display: flex;
+  border-color: black;
+  border: 2px;
+  border-style: dashed;
+  flex-direction: row;
+}
+#xWins{
+display: block;
+margin: 50px;
+font-size: larger;
+}
+#oWins{
+  display: block;
+  margin: 50px;
+  font-size: larger;
+}
+#ties{
+  display: block;
+  margin: 50px;
+  font-size: larger;
 }
