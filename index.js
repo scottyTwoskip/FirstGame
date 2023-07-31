@@ -6,9 +6,14 @@ const restartBtn = document.querySelector("#restartBtn")
 //use current loop to add to these blank values using i++
 //add clear data button that clears these varuables 
 
-var xWinsTracker = document.getElementById("#xScoreData")
-var oWinsTracker = document.getElementById("#oScoreData")
-var tieTracker = document.getElementById("tieScoreData")
+var xWinsTrackerSpanTag = document.getElementById("xScoreData")
+var oWinsTrackerSpanTag = document.getElementById("oScoreData")
+var tieTrackerSpanTag = document.getElementById("tieScoreData")
+xWinsTrackerSpanTag.textContent = 0;
+oWinsTrackerSpanTag.textContent = 0;
+tieTrackerSpanTag.textContent = 0;
+
+
 const winConditions = [
     [0, 1, 2],
     [3, 4, 5],
@@ -61,11 +66,13 @@ function checkWinner() {
         }
         if (cellA == cellB && cellB == cellC) {
             roundWon = true
+
             break
         }
     }
     if (roundWon) {
         statusText.textContent = `${currentPlayer} wins!`
+
         running = false
         
     } else if (!options.includes("")) {
