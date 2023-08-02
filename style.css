@@ -59,6 +59,7 @@ h1 {
 }
 #statusText{
   font-size: 50px;
+  margin: 20px;
 }
 .scoreboard{
   font-family: 'Brush Script MT', cursive;
