@@ -5,27 +5,31 @@ body{
   background-image: url("https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/10d97dd2-2bba-4f5c-91e3-ca6ca731c2fc/d2qtxay-19425329-6bf4-4d8a-a218-ea6bcf1f2178.jpg/v1/fill/w_900,h_563,q_75,strp/japanese_samurai_wallpaper_by_tennsoccerdr_d2qtxay-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NTYzIiwicGF0aCI6IlwvZlwvMTBkOTdkZDItMmJiYS00ZjVjLTkxZTMtY2E2Y2E3MzFjMmZjXC9kMnF0eGF5LTE5NDI1MzI5LTZiZjQtNGQ4YS1hMjE4LWVhNmJjZjFmMjE3OC5qcGciLCJ3aWR0aCI6Ijw9OTAwIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmltYWdlLm9wZXJhdGlvbnMiXX0.ityB95MrJ5M5m6muks5GRu5lBinQXS2kPUd22054OM0");
 }
 h1 {
-  margin: 0, auto;
+  margin: 20px;
   text-align: center;
+  font-size: 70px;
 }
 .cell {
-  width: 75px;
-  height: 75px;
+  width: 80px;
+  height: 80px;
   border: 2px solid;
   box-shadow: 0 0 0 2px;
-  line-height: 75px;
+  line-height: 80px;
   font-size: 65px;
   cursor: pointer;
 }
 #gameContainer {
-  font-family: "Permanent Marker", cursive;
+  font-family: 'Brush Script MT', cursive;
   text-align: center;
-  margin: 30px;
+  margin: 10px;
   background-color: white;
   opacity: 80%;
   border: 3px;
-  border-color: black;
+  border-color: rgba(0, 0, 0, 0.705);
   border-style: inset;
+  border-radius: 25px;
+  transition: 1s;
+  padding: 1px;
 }
 #cellContainer {
   display: grid;
@@ -35,22 +39,41 @@ h1 {
   text-align: center;
 }
 #restartBtn {
-  margin: 0, auto;
-  margin-top: 10px;
-  width: 80px;
-  height: 30px;
-  background-color: white;
+  margin: 10px;
+  height: 130px;
+  background-color: rgb(181,181,181);
+  border-radius:55%;
+  width: 140px;
+  transition-duration: .4s;
+  color: red;
+  cursor: pointer;
+  border: red;
+  font-family:'Brush Script MT', cursive;
+  font-size: 40px;
+}
+#restartBtn:hover{
+  width: 220px;
+  height: 140px;
+  background-color: rgb(202, 4, 4);
+  color: black;
+}
+#statusText{
+  font-size: 50px;
 }
 .scoreboard{
+  font-family: 'Brush Script MT', cursive;
+  font-size: 25px;
   display: flex;
   border-color: black;
   border: 3px;
   border-style: inset;
   flex-direction: row;
-  background-color: white;
+  background-color: rgb(181, 181, 181);
   font: small-caps;
   margin: 50px;
   opacity: 100%;
+  border-radius: 25px;
+  transition: 2s;
 }
 #xWins{
 display: block;

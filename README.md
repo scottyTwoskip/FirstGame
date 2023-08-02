@@ -1,5 +1,5 @@
 # FirstGame
-An attempt at my first game in Javascipt on a friday night (lol im finally on the right path).
+First attempt at building a game. Built from the bro code tutorial on youtube. Simple Tic Tac Toe game with score board. Three and a row wins! 
 
 credit: 
 brocode tic tac toe guide link here: https://www.youtube.com/watch?v=AnmwHjpEhtA
