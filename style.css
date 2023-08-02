@@ -1,5 +1,8 @@
 body{
-  background-color: brown;
+  background-repeat: no-repeat;
+  height: 100%;
+  background-size: cover;
+  background-image: url("https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/10d97dd2-2bba-4f5c-91e3-ca6ca731c2fc/d2qtxay-19425329-6bf4-4d8a-a218-ea6bcf1f2178.jpg/v1/fill/w_900,h_563,q_75,strp/japanese_samurai_wallpaper_by_tennsoccerdr_d2qtxay-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NTYzIiwicGF0aCI6IlwvZlwvMTBkOTdkZDItMmJiYS00ZjVjLTkxZTMtY2E2Y2E3MzFjMmZjXC9kMnF0eGF5LTE5NDI1MzI5LTZiZjQtNGQ4YS1hMjE4LWVhNmJjZjFmMjE3OC5qcGciLCJ3aWR0aCI6Ijw9OTAwIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmltYWdlLm9wZXJhdGlvbnMiXX0.ityB95MrJ5M5m6muks5GRu5lBinQXS2kPUd22054OM0");
 }
 h1 {
   margin: 0, auto;
@@ -17,6 +20,12 @@ h1 {
 #gameContainer {
   font-family: "Permanent Marker", cursive;
   text-align: center;
+  margin: 30px;
+  background-color: white;
+  opacity: 80%;
+  border: 3px;
+  border-color: black;
+  border-style: inset;
 }
 #cellContainer {
   display: grid;
@@ -30,13 +39,18 @@ h1 {
   margin-top: 10px;
   width: 80px;
   height: 30px;
+  background-color: white;
 }
 .scoreboard{
   display: flex;
   border-color: black;
-  border: 2px;
-  border-style: dashed;
+  border: 3px;
+  border-style: inset;
   flex-direction: row;
+  background-color: white;
+  font: small-caps;
+  margin: 50px;
+  opacity: 100%;
 }
 #xWins{
 display: block;

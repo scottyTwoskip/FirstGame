@@ -80,7 +80,7 @@ function checkWinner() {
         running = false
         
     } else if (!options.includes("")) {
-        statusText.textContent = `Go again DUDES!`
+        statusText.textContent = `Battle again Samurais!`
         tieTrackerSpanTag.textContent++
         running = false
         
