@@ -8,20 +8,20 @@ Simple Tic Tac Toe game. Contains scoreboard that tracks player O, Player X and 
 
 Problems:
 
-I encountered some difficulty going back into the code to to create the scoreboard. Had to relearn some bits to make sure the modifications saved. 
+-I encountered some difficulty going back into the code to to create the scoreboard. Had to relearn some bits to make sure the modifications to scoreboard saved. 
+-I had difficulty comprehending some of the function codes until playing with it. 
+
 
 Instructions:
 
 (-No installation required.)
-
-1. x starts first by clicking in one of the 9 cells. 
--(whoever goes first is x)
-2. o goes 2nd always and an o will appear when it is clicked.
-3. first to get three cells in a row or in a line wins.
-4. the scoreboard tracks games until paged is refreshed.
+1. X starts first by clicking in one of the 9 cells. 
+-(Whoever goes first is x)
+2. O goes 2nd always and an o will appear when it is clicked.
+3. First to get three cells in a row or in a line wins.
+4. The scoreboard tracks games until paged is refreshed.
 
 Credit: 
 
-brocode tic tac toe guide link here: https://www.youtube.com/watch?v=AnmwHjpEhtA
-
-samurai background photo source: https://www.deviantart.com/tennsoccerdr/art/Japanese-Samurai-Wallpaper-165998554
+3. Brocode tic tac toe guide link here: https://www.youtube.com/watch?v=AnmwHjpEhtA
+2. Samurai background photo source: https://www.deviantart.com/tennsoccerdr/art/Japanese-Samurai-Wallpaper-165998554
