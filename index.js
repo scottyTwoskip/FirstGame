@@ -1,19 +1,19 @@
+//variables declared for html elements
 const cells = document.querySelectorAll(".cell")
 const statusText = document.querySelector("#statusText")
 const restartBtn = document.querySelector("#restartBtn")
-//scoreboard variables here
-//use current loop to add to these blank values using i++
-//add clear data button that clears these varuables 
 
+//scoreboard span tags in html
 var xWinsTrackerSpanTag = document.getElementById("xScoreData")
 var oWinsTrackerSpanTag = document.getElementById("oScoreData")
 var tieTrackerSpanTag = document.getElementById("tieScoreData")
 
+//scoreboard value defaults
 xWinsTrackerSpanTag.textContent = 0;
 oWinsTrackerSpanTag.textContent = 0;
 tieTrackerSpanTag.textContent = 0;
 
-
+//win conditions set by using arrays
 const winConditions = [
     [0, 1, 2],
     [3, 4, 5],
@@ -25,16 +25,19 @@ const winConditions = [
     [2, 4, 6],
 ];
 
+//this block of code helps set start of program
 let options = ["", "", "", "", "", "", "", "", ""]
 let currentPlayer = "X"
 let running = false;
 
+//game function
 function initializeGame() {
     cells.forEach(cell => cell.addEventListener("click", cellClicked))
     restartBtn.addEventListener("click", restartGame)
     statusText.textContent = `${currentPlayer}'s turn`
     running = true
 }
+//what happens when cell clicked here and how to keep game running
 function cellClicked() {
     const cellIndex = this.getAttribute("cellIndex")
 
@@ -44,6 +47,9 @@ function cellClicked() {
     updateCell(this, cellIndex)
     checkWinner()
 }
+//updateCell and changePlayer function help make cell either
+//o or x.
+
 function updateCell(cell, index) {
     options[index] = currentPlayer
     cell.textContent = currentPlayer
@@ -54,7 +60,7 @@ function changePlayer() {
 }
 function checkWinner() {
     let roundWon = false
-
+//loop is used to apply all possible win conditons by the array index.
     for (let i = 0; i < winConditions.length; i++) {
         const condition = winConditions[i];
         const cellA = options[condition[0]]
@@ -91,6 +97,7 @@ function checkWinner() {
 
 
 }
+//restarts game here
 function restartGame() {
     currentPlayer = "X"
     options = ["", "", "", "", "", "", "", "", ""]
@@ -98,4 +105,5 @@ function restartGame() {
     cells.forEach(cell => cell.textContent = "")
     running = true
 }
+//calls largest function here
 initializeGame()
